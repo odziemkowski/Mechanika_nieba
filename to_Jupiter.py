@@ -108,11 +108,6 @@ def optimal_date(H, date0, date1, m, Isp, step):
         x2.append(int((date_arrivalJ - date0).jd))
         x3.append(float(dv_total / u.km * u.s))
         x4.append(int(m_p / u.kg))
-        #print(x1)
-        
-        #x={'1': date0.iso[0:10],'2': int((date_arrivalU - date0).jd),'3': float(dv_total / u.km * u.s),'4': int(m_p / u.kg)}
-        #lista = pd.DataFrame(,index=[i])
-        
         
         # wyswietlenie wynikow dla kolejnych dni
         print(date0.iso[0:10], ', %i days, %.3f km/s, %i kg' % (int((date_arrivalJ - date0).jd),float(dv_total / u.km * u.s),int(m_p / u.kg)))
